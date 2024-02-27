@@ -1,0 +1,35 @@
+Nk(10,5)
+all 4 tribes are equal
+
+test the update-initial-states function with the append, overwrite and append 2 functions against each other
+all tribes are the same , 1,2,3 become the same inital states each run
+trib1  "Overwrite"
+tribe2 "append"
+tribe3 "append" 4
+
+(ceex/experiment_n_times_4_tribes_exp4_2 ceex/experiment_4 1 "CEFiles/experiment4_1" 2 rand-int no-threads "all" 1 "CEFiles\\output")
+-> des weiteren werden die von tribe2 (append) alle attractoren mit getrackt die ereicht werden
+
+#Mode and States
+Attractor:
+Initial condition:
+Gene1 Gene2 Gene3 Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+
+
+State specifications:
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 !Gene10
+
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 100
+parents-num 2
+fitness-thresold 1
+generations-number 10
+initial-state-pool-size 1
+path-size 1000

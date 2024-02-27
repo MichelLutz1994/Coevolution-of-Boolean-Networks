@@ -1,0 +1,12 @@
+attractor 3
+- austausch nur alle 500 Generationen
+
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 100
+parents-num 2
+fitness-thresold 0.8
+generations-number 500
+initial-state-pool-size 4
+path-size 100000

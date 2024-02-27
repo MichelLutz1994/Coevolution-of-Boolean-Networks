@@ -1,0 +1,11 @@
+like run 2
+
+neu meta für crc
+population-size 20
+mutation-per-network 2
+mutation-percentage 100
+parents-num 2
+fitness-thresold 0.8
+generations-number 25
+initial-state-pool-size 1
+path-size 100000

@@ -1,0 +1,29 @@
+das gleiche wie 12_1 aber tribe 1 und 2 vertauscht
+tribe 0 bekommt alle 5 Generationen einen zufälligen State aus dem fittesten Attractor von tribe1
+randomNKNetze(10,5), jeder Tribe besteht aus 10 zufälligen Netzen
+
+n1  = 1  wiederholung
+n50 = 50 wiederholungne mit mittelwertbildung
+
+für beide gleich
+Initial condition:
+Gene1 Gene2 Gene3 Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+
+State specifications:
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 !Gene10
+
+
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 100
+parents-num 2
+fitness-thresold 1
+generations-number 5
+initial-state-pool-size 1
+path-size 1000

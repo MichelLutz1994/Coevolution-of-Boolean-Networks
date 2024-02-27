@@ -1,0 +1,34 @@
+randomNKNetze(10,5), jeder Tribe besteht aus 10 zufälligen Netzen
+Tribe0 = Tribe1 = Tribe2 (alle gleich)
+
+
+n1  = 1  wiederholung
+n50 = 50 wiederholungne mit mittelwertbildung
+
+Tribe0 und Tribe1 eine vergleichen jeden durchlauf ihre fitness
+- der fittere senkt seine mutationsrate um 1 (min 1) (das könnte man auch noch mit 0 testen)
+- der weniger fitte erhöht seine mutationsrate um 1
+
+
+für alle 3 tribes gleich
+Initial condition:
+Gene1 Gene2 Gene3 Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+
+State specifications:
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 !Gene10
+
+
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 100
+parents-num 2
+fitness-thresold 1
+generations-number 20
+initial-state-pool-size 1
+path-size 1000

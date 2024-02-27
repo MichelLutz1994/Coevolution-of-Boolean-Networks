@@ -1,0 +1,8 @@
+# One round attractor
+Attractor:
+Initial condition:
+
+
+State specifications:
+
+

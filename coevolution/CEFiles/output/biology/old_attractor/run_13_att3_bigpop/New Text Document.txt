@@ -1,0 +1,28 @@
+ (ceex/experiment_n_times_2_tribes_saveResults ceex/experiment_bio
+                                                "CEFiles/biology"
+                                                "CEFiles/output/biology"
+                                                20
+                                                50
+                                                rand-int
+                                                10
+                                                0
+                                                "all"
+                                                1
+                                                "overwrite"
+                                                nil)
+												
+												
+												
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 50
+parents-num 2
+fitness-thresold 0.8
+generations-number 50
+initial-state-pool-size 4
+path-size 100000										
+												
+population-size 150
+mutation-per-network 5
+initial-state-pool-size 1

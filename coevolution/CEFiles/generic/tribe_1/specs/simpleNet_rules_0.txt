@@ -1,0 +1,7 @@
+# One round attractor
+Attractor:
+Initial condition:
+!Gene1 !Gene2 !Gene3
+
+State specifications:
+!Gene1 !Gene2 !Gene3

@@ -1,0 +1,4 @@
+wie in run2 nur jetzt gibt tribe1 -> an tribe2 weiter
+alle 25 generationen
+
+alle 4 initial conditionen werden verwendet

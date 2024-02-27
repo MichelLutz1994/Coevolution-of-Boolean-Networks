@@ -1,0 +1,16 @@
+fast genauso wie 17
+
+
+population-size 50
+mutation-per-network 10
+initial-state-pool-size 1
+
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 100
+parents-num 2
+fitness-thresold 0.8
+generations-number 100
+initial-state-pool-size 4
+path-size 100000

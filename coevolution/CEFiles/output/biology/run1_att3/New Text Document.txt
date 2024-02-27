@@ -1,0 +1,21 @@
+first test run with new attractor search
+
+(ceex/experiment_n_times_2_tribes_saveResults ceex/experiment_bio_no_interaction
+                                                "CEFiles/biology"
+                                                "CEFiles/output/biology"
+                                                2
+                                                10
+                                                rand-int
+                                                12
+                                                0
+                                                "fittest"
+                                                "all"
+                                                1
+                                                "overwrite"
+                                                nil)
+												
+												
+population-size 400
+mutation-per-network 15
+initial-state-pool-size 1
+												

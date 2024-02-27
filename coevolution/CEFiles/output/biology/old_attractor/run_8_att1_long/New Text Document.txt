@@ -1,0 +1,33 @@
+wie run6 aber mit attractor 1
+
+
+
+
+
+
+# One round attractor
+Attractor:
+Initial condition:
+EGFR KRAS RAF MEK scf ERK eIF4F !EBP1 cMYC cJUN PI3K AKT !TSC2_1 mTORC1 S6K1 Tiam1 RAC1 JNK PAK1 IQGAP1 PGE2 HDAC2 ERBB1_2 cFOS RSK AP1 COX2 FAS NFkB !Ecad !TIGHT_JUNCTION SNAIL1 AXIN2 FZD DVL !GSK3B_cyt !GSK3B_deg !GSK3B_DC !APC !AXIN !DC BCAT TCF_LEF !PP2A CIP2A
+
+State specifications:
+mTORC1 ERK !BCAT !TSC2_1 !cMYC !AXIN2 S6K1 RSK
+
+population-size 30
+mutation-per-network 5
+initial-state-pool-size 1
+
+
+
+(ceex/experiment_n_times_2_tribes_saveResults ceex/experiment_bio
+                                                "CEFiles/biology"
+                                                "CEFiles/output/biology"
+                                                20
+                                                50
+                                                rand-int
+                                                4
+                                                0
+                                                "all"
+                                                1
+                                                "overwrite"
+                                                nil)

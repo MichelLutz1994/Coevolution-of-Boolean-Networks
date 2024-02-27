@@ -1,0 +1,2047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns:e="http://www.sbml.org/sbml/level3/version1/core" xmlns:qual="http://www.sbml.org/sbml/level3/version1/qual/version1" qual:required="true" version="1" level="3">
+  <model id="network13">
+    <listOfCompartments>
+      <compartment constant="true" id="default"/>
+    </listOfCompartments>
+    <qual:listOfQualitativeSpecies>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene1" qual:id="Gene1" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene2" qual:id="Gene2" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene3" qual:id="Gene3" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene4" qual:id="Gene4" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene5" qual:id="Gene5" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene6" qual:id="Gene6" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene7" qual:id="Gene7" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene8" qual:id="Gene8" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene9" qual:id="Gene9" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene10" qual:id="Gene10" qual:constant="false" qual:compartment="default"/>
+    </qual:listOfQualitativeSpecies>
+    <qual:listOfTransitions>
+      <qual:transition qual:name="Interactions targeting Gene1" qual:id="tr_Gene1">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene10"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene5"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene6"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene4"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene1"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene1"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:xc="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <or/>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene1</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene6</ci>
+                      <cn type="integer">0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene3</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene10</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene2" qual:id="tr_Gene2">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene5"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene4"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene9"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene1"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene2"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:xe="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <or/>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene1</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>Gene4</ci>
+                  <cn type="integer">1</cn>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene4</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene9</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene1</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene3" qual:id="tr_Gene3">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene8"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene5"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene6"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene9"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene1"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene7"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:kg="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <not/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene6</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene7</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene9</ci>
+                      <cn type="integer">0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene1</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene6</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene7</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene9</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene6</ci>
+                      <cn type="integer">0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene7</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene9</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene1</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene8</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene9</ci>
+                      <cn type="integer">0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci>Gene6</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci>Gene7</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci>Gene9</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene7</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene1</ci>
+                      <cn type="integer">0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene6</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene9</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci>Gene1</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci>Gene6</ci>
+                        <cn type="integer">0</cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci>Gene9</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci>Gene5</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci>Gene1</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci>Gene6</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci>Gene9</ci>
+                        <cn type="integer">0</cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci>Gene1</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci>Gene6</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci>Gene7</ci>
+                        <cn type="integer">1</cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene4" qual:id="tr_Gene4">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene5"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene4"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene2"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene7"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene4"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:ki="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <or/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene7</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene4</ci>
+                      <cn type="integer">0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene3</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene7</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene4</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene2</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene5" qual:id="tr_Gene5">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene8"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene4"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene9"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene2"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene5"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:lk="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <or/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene6" qual:id="tr_Gene6">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene5"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene6"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene2"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene7"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene6"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:gm="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <or/>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene7</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene3</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene2</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene6</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene3</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene7" qual:id="tr_Gene7">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene10"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene5"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene1"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene2"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene7"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:do="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <or/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene10</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene10</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene10</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene10</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene10</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene10</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene8" qual:id="tr_Gene8">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene8"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene5"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene4"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene9"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene2"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene8"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:bq="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <or/>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene3</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene4</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene5</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene8</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene3</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene9</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene4</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene8</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene5</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene8</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene9" qual:id="tr_Gene9">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene6"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene4"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene1"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene7"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene9"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:wr="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <or/>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene4</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene7</ci>
+                      <cn type="integer">0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene1</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene3</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene3</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene1</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene10" qual:id="tr_Gene10">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene6"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene4"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene9"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene2"/>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene7"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene10"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:ot="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <or/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci>Gene2</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene4</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene7</ci>
+                      <cn type="integer">1</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci>Gene6</ci>
+                      <cn type="integer">0</cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene7</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene2</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci>Gene6</ci>
+                    <cn type="integer">0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene9</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>Gene4</ci>
+                    <cn type="integer">1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+    </qual:listOfTransitions>
+  </model>
+</sbml>

@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="commonbusiness:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/commonbusiness_jar</output-path>
+    <root id="root">
+      <element id="archive" name="commonbusiness.jar">
+        <element id="module-output" name="commonbusiness" />
+      </element>
+      <element id="library" level="project" name="Leiningen: com.taoensso/timbre:5.2.1" />
+      <element id="library" level="project" name="Leiningen: clojure-complete:0.2.5" />
+      <element id="library" level="project" name="Leiningen: org.clojure/data.codec:0.1.0" />
+      <element id="library" level="project" name="Leiningen: org.clojure/data.zip:1.0.0" />
+      <element id="library" level="project" name="Leiningen: org.clojure/math.numeric-tower:0.0.5" />
+      <element id="library" level="project" name="Leiningen: io.aviso/pretty:1.1.1" />
+      <element id="library" level="project" name="Leiningen: org.clojure/clojure:1.11.1" />
+      <element id="library" level="project" name="Leiningen: nrepl:0.6.0" />
+      <element id="library" level="project" name="Leiningen: zip-visit:1.1.0" />
+      <element id="library" level="project" name="Leiningen: org.clojure/data.csv:1.0.1" />
+      <element id="library" level="project" name="Leiningen: com.taoensso/truss:1.6.0" />
+      <element id="library" level="project" name="Leiningen: org.clojure/tools.cli:1.0.206" />
+      <element id="library" level="project" name="Leiningen: org.clojure/data.xml:0.2.0-alpha6" />
+      <element id="library" level="project" name="Leiningen: org.clojure/data.json:2.4.0" />
+      <element id="library" level="project" name="Leiningen: com.taoensso/encore:3.21.0" />
+      <element id="library" level="project" name="Leiningen: org.clojure/tools.reader:1.3.6" />
+      <element id="library" level="project" name="Leiningen: org.clojure/spec.alpha:0.3.218" />
+      <element id="library" level="project" name="Leiningen: org.clojure/core.specs.alpha:0.2.62" />
+      <element id="library" level="project" name="Leiningen: com.climate/claypoole:1.1.4" />
+      <element id="library" level="project" name="Leiningen: random-seed:1.0.0" />
+    </root>
+  </artifact>
+</component>

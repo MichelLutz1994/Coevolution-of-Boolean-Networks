@@ -1,0 +1,5 @@
+population-size 20
+mutation-per-network 1
+initial-state-pool-size 1
+
+reapets 20

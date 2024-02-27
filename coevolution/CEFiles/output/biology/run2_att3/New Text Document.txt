@@ -1,0 +1,16 @@
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 100
+parents-num 2
+fitness-thresold 0.8
+generations-number 10
+initial-state-pool-size 4
+path-size 100000
+
+State specifications:
+mTORC1 ERK !BCAT !TSC2_1 !cMYC !AXIN2 FZD DVL GSK3B_deg GSK3B_DC APC AXIN !TCF_LEF S6K1 RSK
+
+population-size 100
+mutation-per-network 5
+initial-state-pool-size 1

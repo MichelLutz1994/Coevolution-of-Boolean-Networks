@@ -1,0 +1,36 @@
+lauf 1 mal mit 10 evolvierungen
+
+randomNK(10,3)
+
+4 Tribes: 0=2 und 1=3
+
+>alle gleiche start states
+>tribe 0 gibt alle 10 Generationen etwas an tribe 1  
+
+#Mode and States
+Attractor:
+Initial condition:
+Gene1 Gene2 Gene3 Gene4 Gene5 !Gene6 !Gene7 !Gene8 !Gene9 !Gene10
+
+State specifications:
+Gene1 Gene2 Gene3 Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 Gene2 Gene3 Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 Gene3 Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 Gene10
+
+
+#Metaparameters
+population-size 5
+mutation-per-network 2
+mutation-percentage 100
+parents-num 2
+fitness-thresold 1
+generations-number 10
+initial-state-pool-size 1
+path-size 1000

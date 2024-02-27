@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns:e="http://www.sbml.org/sbml/level3/version1/core" xmlns:qual="http://www.sbml.org/sbml/level3/version1/qual/version1" qual:required="true" version="1" level="3">
+  <model id="network1">
+    <listOfCompartments>
+      <compartment constant="true" id="default"/>
+    </listOfCompartments>
+    <qual:listOfQualitativeSpecies>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene1" qual:id="Gene1" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene2" qual:id="Gene2" qual:constant="false" qual:compartment="default"/>
+      <qual:qualitativeSpecies qual:maxLevel="1" qual:name="Gene3" qual:id="Gene3" qual:constant="false" qual:compartment="default"/>
+    </qual:listOfQualitativeSpecies>
+    <qual:listOfTransitions>
+      <qual:transition qual:name="Interactions targeting Gene1" qual:id="tr_Gene1">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene2"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene1"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:eb="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <eq/>
+                <ci>Gene2</ci>
+                <cn type="integer">1</cn>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene2" qual:id="tr_Gene2">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene2"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene2"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:ob="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <eq/>
+                <ci>Gene2</ci>
+                <cn type="integer">1</cn>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:name="Interactions targeting Gene3" qual:id="tr_Gene3">
+        <qual:listOfInputs>
+          <qual:input qual:transitionEffect="none" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:transitionEffect="assignmentLevel" qual:qualitativeSpecies="Gene3"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns:yb="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <eq/>
+                <ci>Gene3</ci>
+                <cn type="integer">1</cn>
+              </apply>
+            </math>
+          </qual:functionTerm>
+          <qual:defaultTerm qual:resultLevel="0"/>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+    </qual:listOfTransitions>
+  </model>
+</sbml>

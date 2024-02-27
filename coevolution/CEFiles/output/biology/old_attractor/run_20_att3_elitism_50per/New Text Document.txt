@@ -1,0 +1,17 @@
+population-size 100
+mutation-per-network 15
+initial-state-pool-size 1
+
+  (ceex/experiment_n_times_2_tribes_saveResults ceex/experiment_bio
+                                                "CEFiles/biology"
+                                                "CEFiles/output/biology"
+                                                2
+                                                5
+                                                rand-int
+                                                20
+                                                0
+                                                "elitism"
+                                                "all"
+                                                1
+                                                "overwrite"
+                                                nil)

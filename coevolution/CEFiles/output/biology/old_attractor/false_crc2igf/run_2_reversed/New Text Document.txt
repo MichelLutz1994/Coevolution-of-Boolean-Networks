@@ -1,0 +1,4 @@
+wie in run1 nur jetzt gibt tribe1 -> an tribe2 weiter
+alle 25 generationen
+
+geringer effect, da alle 25 nur einer von 4 initialen zuständen geändert wird

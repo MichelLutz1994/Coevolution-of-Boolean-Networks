@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: com.taoensso/timbre:5.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/localRepo/artifacts/com/taoensso/timbre/5.1.2/timbre-5.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

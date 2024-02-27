@@ -1,0 +1,25 @@
+targets,factors
+Wnt, Wnt
+AXIN, ERK | !Wnt
+GSK3b, !(Wnt | ERK | Akt)
+GSK3B_DC, AXIN & GSK3b
+BCAT, !GSK3B_DC
+TCF, BCAT & !(JNK & FoxO)
+FoxO, !Akt & JNK
+Rho, (Wnt | PI3K | mTORC2) & !(RAC1 | PKC)
+RAC1, (Wnt | PI3K | mTORC2) & !Rho
+MEKK1, RAC1 | Rho
+JNK, MEKK1 | RAC1
+PKC, Rho | Wnt | mTORC2
+IGF, IGF
+IRS, IGF & !(S6K & JNK) 
+PI3K, (IRS | Ras ) & !Rho
+Akt, PI3K | mTORC2
+TSC2_1, !(Akt | ERK) | GSK3b
+mTORC1, ! TSC2_1
+S6K, mTORC1 | GSK3b
+Ras, IGF | Wnt
+Raf, (Ras | PKC) & !Akt
+ERK, Raf
+mTORC2, !(S6K | GSK3b) & (PI3K | TSC2_1)
+

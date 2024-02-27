@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/coevolution/coevolution.iml" filepath="$PROJECT_DIR$/coevolution/coevolution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonbusiness/commonbusiness.iml" filepath="$PROJECT_DIR$/commonbusiness/commonbusiness.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geneticprogramming/geneticprogramming.iml" filepath="$PROJECT_DIR$/geneticprogramming/geneticprogramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insilicoexperiments/insilicoexperiments.iml" filepath="$PROJECT_DIR$/insilicoexperiments/insilicoexperiments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/networkssimulations.iml" filepath="$PROJECT_DIR$/networkssimulations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timeseriesevolution/timeseriesevolution.iml" filepath="$PROJECT_DIR$/timeseriesevolution/timeseriesevolution.iml" />
+    </modules>
+  </component>
+</project>

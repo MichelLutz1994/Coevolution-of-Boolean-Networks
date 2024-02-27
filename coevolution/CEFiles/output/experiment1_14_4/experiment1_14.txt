@@ -1,0 +1,35 @@
+tribe 1 bekommt alle 1 Generationen einen zufälligen State aus dem fittesten Attractor von tribe0
+tribe 2 bekommt alle 1 Generationen einen zufälligen State aus dem fittesten Attractor von tribe3
+randomNKNetze(10,5), jeder Tribe besteht aus 10 zufälligen Netzen
+n1  = 1  wiederholung
+n50 = 50 wiederholungne mit mittelwertbildung
+
+Das ist das Experiment 12 mit Controll Tribe
+Tribe0 = Tribe2
+Tribe1 = Tribe3
+
+Tribe0 -> Tribe1
+Tribe3 -> Tribe2
+
+für alle 4 tribes gleich
+Initial condition:
+Gene1 Gene2 Gene3 Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+
+State specifications:
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 !Gene10
+
+
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 100
+parents-num 2
+fitness-thresold 1
+generations-number 1
+initial-state-pool-size 1
+path-size 1000

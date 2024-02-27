@@ -1,0 +1,17 @@
+wie in run3
+aber alle 5 generationen
+
+alle 4 initial conditionen werden verwendet
+
+(ceex/experiment_n_times_2_tribes_saveResults ceex/experiment_bio_all
+                                                "CEFiles/biology"
+                                                "CEFiles/output/biology"
+                                                25
+                                                150
+                                                rand-int
+                                                4
+                                                0
+                                                "all"
+                                                1
+                                                "overwrite"
+                                                nil)

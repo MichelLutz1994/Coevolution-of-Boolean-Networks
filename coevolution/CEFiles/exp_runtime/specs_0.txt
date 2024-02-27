@@ -1,0 +1,25 @@
+#default specifications for the experiment, will only be used if no information is given for the tribe
+
+#Mode and States
+Attractor:
+Initial condition:
+Gene1 Gene2 Gene3 Gene4 Gene5 
+
+
+State specifications:
+!Gene1 !Gene2 Gene3 Gene4 !Gene5 
+!Gene1 Gene2 Gene3 Gene4 Gene5
+!Gene1 !Gene2 Gene3 Gene4 Gene5 
+Gene1 !Gene2 !Gene3 Gene4 Gene5
+Gene1 !Gene2 !Gene3 Gene4 Gene5
+
+
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 100
+parents-num 2
+fitness-thresold 1
+generations-number 100
+initial-state-pool-size 1
+path-size 1000

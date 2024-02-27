@@ -1,0 +1,28 @@
+# One round attractor
+Attractor:
+Initial condition:
+!Wnt AXIN GSK3b GSK3B_DC !BCAT !TCF !FoxO !Rho !RAC1 !MEKK1 !JNK !PKC !IGF !IRS !PI3K !Akt TSC2_1 !mTORC1 S6K !Ras !Raf !ERK !mTORC2 
+
+State specifications:
+!Wnt AXIN GSK3b GSK3B_DC !BCAT !TCF !FoxO !Rho !RAC1 !MEKK1 !JNK !PKC !IGF !IRS !PI3K !Akt TSC2_1 !mTORC1 S6K !Ras !Raf !ERK !mTORC2 
+
+
+Initial condition:
+Wnt !AXIN !GSK3b !GSK3B_DC BCAT TCF !FoxO !Rho RAC1 MEKK1 JNK PKC !IGF !IRS PI3K Akt !TSC2_1 mTORC1 S6K Ras !Raf !ERK !mTORC2
+
+State specifications:
+Wnt !AXIN !GSK3b !GSK3B_DC BCAT TCF !FoxO !Rho RAC1 MEKK1 JNK PKC !IGF !IRS PI3K Akt !TSC2_1 mTORC1 S6K Ras !Raf !ERK !mTORC2
+
+
+Initial condition:
+Wnt !AXIN !GSK3b !GSK3B_DC BCAT TCF !FoxO !Rho RAC1 MEKK1 JNK PKC IGF !IRS PI3K Akt !TSC2_1 mTORC1 S6K Ras !Raf !ERK !mTORC2
+
+State specifications:
+Wnt !AXIN !GSK3b !GSK3B_DC BCAT TCF !FoxO !Rho RAC1 MEKK1 JNK PKC IGF !IRS PI3K Akt !TSC2_1 mTORC1 S6K Ras !Raf !ERK !mTORC2
+
+
+Initial condition:
+!Wnt AXIN !GSK3b !GSK3B_DC BCAT TCF !FoxO !Rho RAC1 MEKK1 JNK !PKC IGF !IRS PI3K Akt !TSC2_1 mTORC1 S6K Ras !Raf !ERK !mTORC2
+
+State specifications:
+!Wnt AXIN !GSK3b !GSK3B_DC BCAT TCF !FoxO !Rho RAC1 MEKK1 JNK !PKC IGF !IRS PI3K Akt !TSC2_1 mTORC1 S6K Ras !Raf !ERK !mTORC2

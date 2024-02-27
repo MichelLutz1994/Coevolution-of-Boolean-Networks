@@ -1,0 +1,19 @@
+mit elitism 80% fitteste
+
+population-size 300
+mutation-per-network 20
+initial-state-pool-size 1
+
+(ceex/experiment_n_times_2_tribes_saveResults ceex/experiment_bio
+                                                "CEFiles/biology"
+                                                "CEFiles/output/biology"
+                                                3
+                                                10
+                                                rand-int
+                                                20
+                                                0
+                                                "elitism"
+                                                "all"
+                                                1
+                                                "overwrite"
+                                                nil)

@@ -1,0 +1,46 @@
+tribe 1 bekommt alle 5 Generationen einen zufälligen State aus dem fittesten Attractor von tribe0
+tribe 2 bekommt alle 5 Generationen einen zufälligen State aus dem fittesten Attractor von tribe3
+randomNKNetze(10,5), jeder Tribe besteht aus 10 zufälligen Netzen
+
+n50 = 50 wiederholungne mit mittelwertbildung
+
+die _25 sind mit "rand" 0.25
+die _10 sind mit "rand" 0.10
+die _01 sind mit "rand" 0.01
+die _1-5 sind mit '("Gene1" "Gene2" "Gene3") 1
+die _1-5 sind mit '("Gene1" "Gene2" "Gene3" "Gene4" "Gene5") 1
+die _1-7 sind mit '("Gene1" "Gene2" "Gene3" "Gene4" "Gene5" "Gene6" "Gene7") 1 hier aber 
+
+
+-> wie 14_1 aber mit "rand"
+(experiment_1_n_times_4_tribes 50 "CEFiles/experiment1_14" 110 rand-int no-threads "rand" 0.25 "CEFiles\\output")
+
+Das ist das Experiment 12 mit Controll Tribe
+Tribe0 = Tribe2
+Tribe1 = Tribe3
+
+Tribe0 -> Tribe1
+Tribe3 -> Tribe2
+
+für alle 4 tribes gleich
+Initial condition:
+Gene1 Gene2 Gene3 Gene4 Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+
+State specifications:
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 Gene10
+!Gene1 !Gene2 !Gene3 !Gene4 !Gene5 !Gene6 !Gene7 !Gene8 !Gene9 !Gene10
+
+
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 100
+parents-num 2
+fitness-thresold 1
+generations-number 5
+initial-state-pool-size 1
+path-size 1000

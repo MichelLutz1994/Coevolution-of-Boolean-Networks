@@ -1,0 +1,26 @@
+change to more crossover
+
+
+#Metaparameters
+population-size 10
+mutation-per-network 1
+mutation-percentage 20
+parents-num 2
+fitness-thresold 0.6
+generations-number 500
+initial-state-pool-size 4
+path-size 100000
+
+
+(ceex/experiment_n_times_2_tribes_saveResults ceex/experiment_bio
+                                                "CEFiles/biology"
+                                                "CEFiles/output/biology"
+                                                3
+                                                2
+                                                rand-int
+                                                4
+                                                0
+                                                "all"
+                                                1
+                                                "overwrite"
+                                                nil)
